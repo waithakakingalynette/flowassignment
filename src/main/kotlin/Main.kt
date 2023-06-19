@@ -9,9 +9,9 @@ fun main() {
     robot(56)
     robot(35)
 
-    println(multiples(18))
-    println(multiples(25))
-   println(multiples(45))
+    multiples(18)
+    multiples(25)
+   multiples(45)
 
 }
 
@@ -67,13 +67,13 @@ fun robot(Robot:Int) {
 fun multiples(num:Int){
     for (num in 1..100){
         if (num %3==0 && num %5==0){
-            println("Fizz")
+            println("FizzBuzz")
         }
         else if (num %3==0){
             println("Buzz")
         }
         else if (num %5==0){
-            println("FizzBuzz")
+            println("Fizz")
         }
         else
             println(num)
